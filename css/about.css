@@ -1,0 +1,62 @@
+.about{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.about-wrapper{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img{
+    width: 50%;
+}
+
+.about-title{
+    color: white;
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+}
+
+.about-title::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -62.5%;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    z-index: 10;
+}
+
+.about-title::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 62.5%;
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+    z-index: 10;
+}
+
+.about-presentation{
+    max-width: 50%;
+}
+
+.about-subtitle{
+    color: white;
+    position: relative;
+}
+
+.about-text{
+    color: white;
+    margin-top: 2rem;
+    padding-right: 4rem;
+    max-width: 550px;
+}
