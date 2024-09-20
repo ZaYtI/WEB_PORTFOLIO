@@ -1,0 +1,80 @@
+nav{
+    display: flex;
+    background-color: black;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: orange;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-wrapper{
+    padding: 1rem;
+}
+
+.nav-right-parts{
+    width: 80%;
+}
+
+.nav-link-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-link-wrapper a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    transition: color .15s ease-in-out;
+}
+
+.nav-link-wrapper a:hover{
+    color: orange;
+}
+
+.nav-link-button{
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.nav-link-wrapper a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    border-radius: 3px;
+    bottom: -5px;
+    left: -5%;
+    transition: all .2s ease-in-out;
+}
+
+.nav-link-wrapper a:not(.current):hover::before{
+    width: 110%;
+}
+
+.nav-link-wrapper a:is(.current)::before{
+    width: 110%;
+}
+
+.nav-link-wrapper .current{
+    color: orange ;
+}
+
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    color: white;
+}

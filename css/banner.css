@@ -1,0 +1,47 @@
+.banner{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    padding: 5rem;
+}
+
+.banner span{
+    color: orange;
+}
+
+.banner-title{
+    font-size: 4rem;
+}
+
+.banner-subtitle{
+    font-weight: lighter;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.banner-navigation{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.banner-link{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.banner-link:not(.orange){
+    color: white;
+    border: 1px solid white;
+}
+
+.banner-link:is(.orange){
+    color: black;
+    border: none;
+    background-color: orange;
+}
